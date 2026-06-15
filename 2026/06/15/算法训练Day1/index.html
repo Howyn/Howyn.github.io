@@ -9,7 +9,7 @@
     
     <title>
         
-            Hello World |
+            算法训练Day1 |
         
         Keep Theme
     </title>
@@ -174,7 +174,7 @@
             <div class="post-content-bottom border-box">
                 
                     <div class="post-title">
-                        Hello World
+                        算法训练Day1
                     </div>
                 
 
@@ -202,19 +202,37 @@
         
             <span class="meta-info-item post-create-date">
                 <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
-                <span class="datetime">2026-06-15 19:41:09</span>
+                <span class="datetime">2026-06-15 20:30:00</span>
             </span>
 
             
                 <span class="meta-info-item post-update-date">
                     <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                    <span class="datetime" data-updated="Mon Jun 15 2026 19:41:09 GMT+0800">2026-06-15 19:41:09</span>
+                    <span class="datetime" data-updated="Mon Jun 15 2026 22:10:00 GMT+0800">2026-06-15 22:10:00</span>
                 </span>
             
         
 
         
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
 
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E7%AE%97%E6%B3%95%E9%A2%98/">算法题</a></li>
+                        
+                    
+                </ul>
+            </span>
         
 
         
@@ -235,19 +253,51 @@
                     
 
                     
-                         <p>Welcome to <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/" >Hexo<i class="fas fa-external-link-alt"></i></a>! This is your very first post. Check <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/" >documentation<i class="fas fa-external-link-alt"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fas fa-external-link-alt"></i></a> or you can ask me on <a class="link"   target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fas fa-external-link-alt"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+                         <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p><img   src="/../images/image-20260615211036094.png"  alt="image-20260615211036094"></p>
+<h2 id="我的初次解法"><a href="#我的初次解法" class="headerlink" title="我的初次解法"></a>我的初次解法</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Solution</span> &#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="built_in">int</span>[] <span class="title">TwoSum</span>(<span class="params"><span class="built_in">int</span>[] nums, <span class="built_in">int</span> target</span>)</span> &#123;</span><br><span class="line">        <span class="built_in">int</span>[] nums1=&#123;<span class="number">0</span>,<span class="number">0</span>&#125;;</span><br><span class="line">        <span class="keyword">for</span>(<span class="built_in">int</span> i = <span class="number">0</span>;i&lt;nums.Length;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="built_in">int</span> j=<span class="number">0</span>;j&lt;nums.Length;j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(nums[i]+nums[j]==target&amp;&amp;i!=j)&#123;</span><br><span class="line">                     nums1[<span class="number">0</span>]=i;</span><br><span class="line">                     nums1[<span class="number">1</span>]=j;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> nums1;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html" >Writing<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p><img   src="/../images/image-20260615212337452.png"  alt="image-20260615212337452"></p>
+<p>代码的问题：</p>
+<ul>
+<li>内层循环 j 从 0 开始遍历，产生大量重复遍历，还需要额外判断 i 不等于 j，逻辑冗余。</li>
+<li>找到符合条件的下标后没有终止循环，后续遍历会覆盖已得到的正确结果。</li>
+<li>采用双层循环，时间复杂度高，数据量较大时运行效率差。</li>
+<li>变量命名 nums1 语义模糊，可读性差。</li>
+<li>若数组不存在符合条件的解，会固定返回 [0,0]，无法区分正常结果和无解情况。</li>
+</ul>
+<h2 id="自己改进的代码"><a href="#自己改进的代码" class="headerlink" title="自己改进的代码"></a>自己改进的代码</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">public class Solution &#123;</span><br><span class="line">    public int[] TwoSum(int[] nums, int target) &#123;</span><br><span class="line">        int[] result=&#123;<span class="number">0</span>,<span class="number">0</span>&#125;;//存储结果的数组</span><br><span class="line">        <span class="keyword">for</span>(int i = <span class="number">0</span>;i&lt;nums.Length;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(int j=nums.Length-<span class="number">1</span>;j&gt;i;j--)&#123;//双层循环，注意不能等于nums.Length</span><br><span class="line">                <span class="keyword">if</span>(nums[i]+nums[j]==target)&#123;</span><br><span class="line">                     result[<span class="number">0</span>]=i;//存答案</span><br><span class="line">                     result[<span class="number">1</span>]=j;//存答案</span><br><span class="line">                    return result;//返回值</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">                return result;//返回值</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/server.html" >Server<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>解决了如下问题：</p>
+<ul>
+<li>内层循环 j 从 0 开始遍历，产生大量重复遍历，还需要额外判断 i 不等于 j，逻辑冗余。</li>
+<li>找到符合条件的下标后没有终止循环，后续遍历会覆盖已得到的正确结果。通过直接返回值来终止循环。</li>
+<li>变量命名 nums1 语义模糊，可读性差。</li>
+</ul>
+<p><img   src="/../images/image-20260615213045060.png"  alt="image-20260615213045060"></p>
+<h2 id="参考答案和解析"><a href="#参考答案和解析" class="headerlink" title="参考答案和解析"></a>参考答案和解析</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Solution</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="built_in">int</span>[] <span class="title">TwoSum</span>(<span class="params"><span class="built_in">int</span>[] nums, <span class="built_in">int</span> target</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 键：数组元素值，值：元素对应下标</span></span><br><span class="line">        Dictionary&lt;<span class="built_in">int</span>, <span class="built_in">int</span>&gt; dict = <span class="keyword">new</span> Dictionary&lt;<span class="built_in">int</span>, <span class="built_in">int</span>&gt;();</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> (<span class="built_in">int</span> i = <span class="number">0</span>; i &lt; nums.Length; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">int</span> complement = target - nums[i];</span><br><span class="line">            <span class="comment">// 差值已存在，说明找到两个数</span></span><br><span class="line">            <span class="keyword">if</span> (dict.ContainsKey(complement))</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">int</span>[] &#123; dict[complement], i &#125;;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 不存在则存入当前数值和下标</span></span><br><span class="line">            dict[nums[i]] = i;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 题目保证有唯一解，此行仅作代码兜底</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">int</span>[] &#123; <span class="number">0</span>, <span class="number">0</span> &#125;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html" >Generating<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="C-创建泛型字典对象"><a href="#C-创建泛型字典对象" class="headerlink" title="C# 创建泛型字典对象"></a>C# 创建泛型字典对象</h3><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Dictionary&lt;<span class="built_in">int</span>, <span class="built_in">int</span>&gt; dict = <span class="keyword">new</span> Dictionary&lt;<span class="built_in">int</span>, <span class="built_in">int</span>&gt;();</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html" >Deployment<i class="fas fa-external-link-alt"></i></a></p>
+<p><code>Dictionary</code>：C# 内置的<strong>键值对集合（字典）</strong>，专门用来存储 <code>键(Key) → 值(Value)</code> 的对应关系。</p>
+<p><code>&lt;int, int&gt;</code>：<strong>泛型参数</strong></p>
+<ul>
+<li>第一个 <code>int</code>：代表<strong>键 (Key)</strong> 的数据类型，这里要求键是整数；</li>
+<li>第二个 <code>int</code>：代表<strong>值 (Value)</strong> 的数据类型，这里要求值也是整数；</li>
+</ul>
+<p><code>dict</code>：你定义的<strong>变量名</strong>，用来引用这个字典对象。</p>
+<p>字典特点：<strong>根据键查找值速度极快（近似 O (1)）</strong></p>
+<p>在本题中：</p>
+<ul>
+<li><strong>键 (Key)</strong>：数组里的元素数值 <code>nums[i]</code></li>
+<li><strong>值 (Value)</strong>：该数值对应的数组下标 <code>i</code></li>
+</ul>
+<p><strong>基础的用法：</strong></p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">dict.Add(键, 值);<span class="comment">// 简写（推荐）</span></span><br><span class="line">dict[键] = 值;</span><br><span class="line"><span class="built_in">bool</span> hasKey = dict.ContainsKey(目标键);<span class="comment">//判断是否存在某个键</span></span><br><span class="line"><span class="built_in">int</span> index = dict[键];<span class="comment">//根据键获取值</span></span><br><span class="line">dict.Clear();<span class="comment">//清空字典 </span></span><br></pre></td></tr></table></figure>
+
+<h3 id="代码解析"><a href="#代码解析" class="headerlink" title="代码解析"></a>代码解析</h3><p>下面这行代码，就代表把数组存到字典里面去了。</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dict[nums[i]] = i;</span><br></pre></td></tr></table></figure>
+
+<p><img   src="/../images/image-20260615214051627.png"  alt="image-20260615214051627"></p>
 
                     
                 </div>
@@ -256,6 +306,14 @@
 
                 <div class="post-bottom-tags-and-share border-box">
                     <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E7%AE%97%E6%B3%95%E9%A2%98/">算法题</a>
+                                    </li>
+                                
+                            </ul>
                         
                     </div>
                     <div>
