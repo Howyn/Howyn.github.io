@@ -342,6 +342,20 @@
 <p><img   src="/../images/image-20260615203659225.png"  alt="image-20260615203659225"></p>
 <p>注意调整图像的存储设置，后面项目的文章的路径和图片文件夹的路径位置不能随便的改变。</p>
 <p><img   src="/../images/image-20260615203751115.png"  alt="image-20260615203751115"></p>
+<h2 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h2><p>将keep主题源码克隆到themes文件夹，注意不要搞成两个themes文件夹了，keep必须是themes的子目录。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/XPoet/hexo-theme-keep themes/keep</span><br></pre></td></tr></table></figure>
+
+<p>这里更换keep主题。在配置文件夹要修改主题配置。</p>
+<p><img   src="/../images/image-20260615210117904.png"  alt="image-20260615210117904"></p>
+<p>安装主题依赖：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br></pre></td></tr></table></figure>
+
+<p>部署上线：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>浏览器清空缓存：Ctrl + Shift + R</p>
+<p>成功了：</p>
+<p><img   src="/../images/image-20260615210439140.png"  alt="image-20260615210439140"></p>
 
                     
                 </div>
